@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.deng.clothing.mapper.UserInfoMapper">
+    <sql id="BASE_TABLE">
+    UserInfo
+   </sql>
+  <sql id="BASE_COLUMN">
+    ID,phoneNumber,password,userId,password,level,levelPic,addTime,modTime
+  </sql>
+
+    <select id="selectById" resultType="com.deng.clothing.entity.UserInfo">
+        select * from UserInfo where ID = #{id}
+    </select>
+
+</mapper>

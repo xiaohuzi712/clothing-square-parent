@@ -6,23 +6,23 @@
     <groupId>com.deng</groupId>
     <artifactId>clothing-square-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
     <name>clothing-square-service</name>
-    <description>Demo project for Spring Boot</description>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
+    <parent>
+        <groupId>com.deng</groupId>
+        <artifactId>clothing-square-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
     <dependencies>
+
+        <!--biz层依赖-->
         <dependency>
             <groupId>com.deng</groupId>
             <artifactId>clothing-square-biz</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
 </project>
