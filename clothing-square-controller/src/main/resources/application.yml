@@ -36,8 +36,6 @@ mybatis:
   mapper-locations: classpath:sql/*.xml
   type-aliases-package: com.deng.clothing.entity
 
-
-
 #pagehelper
 pagehelper:
     helperDialect: mysql
@@ -45,4 +43,11 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
     returnPageInfo: check
+
+curator:
+    retryCount: 5
+    elapsedTimeMs: 5000
+    connectString: 127.0.0.1:2181
+    sessionTimeoutMs: 60000
+    connectionTimeoutMs: 4000
 
